@@ -14,6 +14,7 @@
 		EAA1592D1A2532700098BD7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA1592C1A2532700098BD7C /* Images.xcassets */; };
 		EAA159301A2532700098BD7C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA1592E1A2532700098BD7C /* LaunchScreen.xib */; };
 		EAA1593C1A2532710098BD7C /* ios7_v10_multithreads_uiscrollviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA1593B1A2532710098BD7C /* ios7_v10_multithreads_uiscrollviewTests.m */; };
+		EAA159471A2554450098BD7C /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA159461A2554450098BD7C /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		EAA159351A2532700098BD7C /* ios7-v10-multithreads-uiscrollviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios7-v10-multithreads-uiscrollviewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA1593A1A2532700098BD7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAA1593B1A2532710098BD7C /* ios7_v10_multithreads_uiscrollviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios7_v10_multithreads_uiscrollviewTests.m; sourceTree = "<group>"; };
+		EAA159451A2554450098BD7C /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		EAA159461A2554450098BD7C /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +84,14 @@
 		EAA1591E1A2532700098BD7C /* ios7-v10-multithreads-uiscrollview */ = {
 			isa = PBXGroup;
 			children = (
-				EAA159231A2532700098BD7C /* AppDelegate.h */,
-				EAA159241A2532700098BD7C /* AppDelegate.m */,
 				EAA159261A2532700098BD7C /* ViewController.h */,
 				EAA159271A2532700098BD7C /* ViewController.m */,
 				EAA159291A2532700098BD7C /* Main.storyboard */,
 				EAA1592C1A2532700098BD7C /* Images.xcassets */,
 				EAA1592E1A2532700098BD7C /* LaunchScreen.xib */,
 				EAA1591F1A2532700098BD7C /* Supporting Files */,
+				EAA159451A2554450098BD7C /* ImageViewController.h */,
+				EAA159461A2554450098BD7C /* ImageViewController.m */,
 			);
 			path = "ios7-v10-multithreads-uiscrollview";
 			sourceTree = "<group>";
@@ -96,6 +99,8 @@
 		EAA1591F1A2532700098BD7C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EAA159231A2532700098BD7C /* AppDelegate.h */,
+				EAA159241A2532700098BD7C /* AppDelegate.m */,
 				EAA159201A2532700098BD7C /* Info.plist */,
 				EAA159211A2532700098BD7C /* main.m */,
 			);
@@ -221,6 +226,7 @@
 			files = (
 				EAA159281A2532700098BD7C /* ViewController.m in Sources */,
 				EAA159251A2532700098BD7C /* AppDelegate.m in Sources */,
+				EAA159471A2554450098BD7C /* ImageViewController.m in Sources */,
 				EAA159221A2532700098BD7C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
