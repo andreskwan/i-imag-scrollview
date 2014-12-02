@@ -69,7 +69,18 @@
         <scene sceneID="sc9-ab-aXv">
             <objects>
                 <viewController id="MbP-fl-gTz" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PiT-KT-UJv"/>
+                        <viewControllerLayoutGuide type="bottom" id="dmH-CU-YcG"/>
+                    </layoutGuides>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="g0F-Hb-3JA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </scrollView>
                     <navigationItem key="navigationItem" id="s42-5m-2IX"/>
+                    <connections>
+                        <outlet property="scrollView" destination="g0F-Hb-3JA" id="xV6-3X-ufZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bmr-kY-ECJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
