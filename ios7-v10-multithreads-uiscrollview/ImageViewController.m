@@ -8,7 +8,7 @@
 
 #import "ImageViewController.h"
 
-@interface ImageViewController ()
+@interface ImageViewController () <UIScrollViewDelegate>
 @property (nonatomic, strong) UIImageView *imageView;
 //image where being display
 @property (nonatomic, strong) UIImage *image;
@@ -28,9 +28,7 @@
 {
     _imageURL = imageURL;
     //if this is URL in the internet is going to block the main queue!
-    self.image =
-    [UIImage imageWithData:
-     [NSData dataWithContentsOfURL:self.imageURL]];
+    self.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.imageURL]];
 }
 
 //we dont use a instance variable to store it!
@@ -60,9 +58,17 @@
 - (void)setScrollView:(UIScrollView *)scrollView
 {
     _scrollView = scrollView;
+    _scrollView.minimumZoomScale = 0.1;
+    _scrollView.maximumZoomScale = 1.0;
+    _scrollView.delegate = self;
     self.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.imageURL]];
 }
 
+#pragma mark - UIScrollViewDelegate
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.imageView;
+}
 #pragma mark - Life Cycle methods
 -(void)viewDidLoad
 {
